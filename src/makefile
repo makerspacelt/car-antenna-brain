@@ -1,11 +1,10 @@
-# Sources 
 SRCS=car_antenna.c
 OBJS=$(SRCS:.c=.o)
 CC=avr-gcc
 PROJECT=car_antenna
 TARGET=atmega8
-PROGRAMER=pony-stk200
-DEV=/dev/ttyS0
+PROGRAMER=usbasp
+DEV=/dev/ttyACM0
 
 ## The C compiler flags
 CFLAGS = -mmcu=$(TARGET) -Wall -fomit-frame-pointer -Os -fshort-enums -g 
